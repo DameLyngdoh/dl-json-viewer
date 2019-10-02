@@ -18,7 +18,7 @@ export class DlJsonViewerComponent implements OnInit, OnChanges {
   /**
    * The JSON object to render.
    */
-  @Input('json') json: any;
+  @Input('obj') json: any;
   
   /**
    * Number of tab-space(s) to use.
