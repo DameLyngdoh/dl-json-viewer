@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "dl-json-viewer": [
+        "dist/dl-json-viewer"
+      ],
+      "dl-json-viewer/*": [
+        "dist/dl-json-viewer/*"
+      ]
+    }
   }
 }

@@ -1,0 +1,744 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>JSON Viewer for Angular</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">JSON Viewer for Angular</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>DataViewerComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/lib/data-viewer/data-viewer.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>lib-data-viewer</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./data-viewer.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./data-viewer.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#markers">markers</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#Type">Type</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#arrayN">arrayN</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#config">config</a>
+                            </li>
+                            <li>
+                                <a href="#obj">obj</a>
+                            </li>
+                            <li>
+                                <a href="#tab-space">tab-space</a>
+                            </li>
+                            <li>
+                                <a href="#tab-space-index">tab-space-index</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/lib/data-viewer/data-viewer.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="config"></a>
+                        <b>config</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/lib/data-viewer/data-viewer.component.ts:34</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Configuration object.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="obj"></a>
+                        <b>obj</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/JVObject.html" target="_self" >JVObject</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/lib/data-viewer/data-viewer.component.ts:29</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Object to display in viewer.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tab-space"></a>
+                        <b>tab-space</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/lib/data-viewer/data-viewer.component.ts:24</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Amount of spaces to use for tab-space.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tab-space-index"></a>
+                        <b>tab-space-index</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/lib/data-viewer/data-viewer.component.ts:19</a></div>
+                            </td>
+                        </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Current nested index. 0 for topmost object.</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="arrayN"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            arrayN
+                        </b>
+                        <a href="#arrayN"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>arrayN(n: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/lib/data-viewer/data-viewer.component.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Generates an array of n numbers from 0 to n (excluding n).</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>n</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The number of numbers to generate in the array.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>number[]</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Array of numbers [0, 1, ..., n].</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="48"
+                            class="link-to-prism">src/lib/data-viewer/data-viewer.component.ts:48</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="markers"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            markers</b>
+                            <a href="#markers"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/lib/data-viewer/data-viewer.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Markers for viewer (includes separators)</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="Type"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            Type</b>
+                            <a href="#Type"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{ &quot;Array&quot;: 1, &quot;Native&quot;: 2, &quot;NativeArray&quot;: 0, &quot;Object&quot;: 3 }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/lib/data-viewer/data-viewer.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>ObjectType mapping with reference to ObjectType enum.</p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Input } from &#x27;@angular/core&#x27;;
+import { JVObject } from &#x27;../object.model&#x27;;
+
+@Component({
+  selector: &#x27;lib-data-viewer&#x27;,
+  templateUrl: &#x27;./data-viewer.component.html&#x27;,
+  styleUrls: [&#x27;./data-viewer.component.css&#x27;]
+})
+/**
+ * Primary component that displays an object. If nested objects are 
+ * present, then recursive calls to the component are performed with 
+ * updated tabSpaceIndex.
+ */
+export class DataViewerComponent implements OnInit {
+
+  /**
+   * Current nested index. 0 for topmost object.
+   */
+  @Input(&#x27;tab-space-index&#x27;)tabSpaceIndex: number;
+  
+  /**
+   * Amount of spaces to use for tab-space.
+   */
+  @Input(&#x27;tab-space&#x27;)tabSpace: number;
+  
+  /**
+   * Object to display in viewer.
+   */
+  @Input(&#x27;obj&#x27;)obj: JVObject;
+  
+  /**
+   * Configuration object.
+   */
+  @Input(&#x27;config&#x27;)config: any;
+
+  /**
+   * Markers for viewer (includes separators)
+   */
+  public markers: any;
+
+  /**
+   * ObjectType mapping with reference to ObjectType enum.
+   */
+  public Type: any &#x3D; { &quot;Array&quot;: 1, &quot;Native&quot;: 2, &quot;NativeArray&quot;: 0, &quot;Object&quot;: 3 };
+  
+  constructor() { }
+
+  ngOnInit() {
+    this.markers &#x3D; this.config.markers;
+  }
+  
+  /**
+   * Generates an array of n numbers from 0 to n (excluding n).
+   * @param {number} n The number of numbers to generate in the array.
+   * @returns {object} Array of numbers [0, 1, ..., n].
+   */
+  public arrayN(n: number): number[] {
+    return Array(n);
+  }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!-- Native Values --&gt;
+&lt;span *ngIf&#x3D;&quot;obj.type&#x3D;&#x3D;Type.Native&quot; class&#x3D;&quot;native-value&quot;&gt;
+    {{obj.data}}
+&lt;/span&gt;
+
+&lt;!-- Array of Native Values --&gt;
+&lt;span *ngIf&#x3D;&quot;obj.type&#x3D;&#x3D;Type.NativeArray&quot;&gt;
+    &lt;span class&#x3D;&quot;array-bracket&quot;&gt;[&lt;/span&gt;
+    &lt;span *ngFor&#x3D;&quot;let v of obj.data; let i &#x3D; index&quot;&gt;
+        {{v.data}}
+        &lt;span *ngIf&#x3D;&quot;i &lt; obj.data.length-1&quot;&gt;&lt;span class&#x3D;&quot;array-element-separator&quot;&gt;{{markers.array.separator}}&lt;/span&gt; &lt;/span&gt;
+    &lt;/span&gt;
+    &lt;span class&#x3D;&quot;array-bracket&quot;&gt;]&lt;/span&gt;
+&lt;/span&gt;
+
+&lt;!-- Array of Native Values/Objects/Arrays --&gt;
+&lt;span *ngIf&#x3D;&quot;obj.type&#x3D;&#x3D;Type.Array&quot;&gt;
+    &lt;span class&#x3D;&quot;array-bracket&quot;&gt;{{markers.array.open}}&lt;/span&gt;
+    &lt;br&gt;
+    &lt;span *ngFor&#x3D;&quot;let v of obj.data; let i &#x3D; index&quot;&gt;
+        &lt;span *ngFor&#x3D;&quot;let i of arrayN(tabSpace * (tabSpaceIndex + 1))&quot;&gt;&amp;nbsp;&lt;/span&gt;
+        &lt;lib-data-viewer [tab-space-index]&#x3D;&quot;tabSpaceIndex + 1&quot; [tab-space]&#x3D;&quot;tabSpace&quot; [obj]&#x3D;&quot;v&quot; [config]&#x3D;&quot;config&quot;&gt;&lt;/lib-data-viewer&gt;
+        &lt;span *ngIf&#x3D;&quot;i &lt; obj.data.length-1&quot;&gt;&lt;span class&#x3D;&quot;array-element-separator&quot;&gt;{{markers.array.separator}}&lt;/span&gt;&lt;br&gt;&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;br&gt;
+    &lt;span class&#x3D;&quot;array-bracket&quot;&gt;{{markers.array.open}}&lt;/span&gt;
+&lt;/span&gt;
+
+&lt;!-- Object --&gt;
+&lt;span *ngIf&#x3D;&quot;obj.type&#x3D;&#x3D;Type.Object&quot;&gt;
+    &lt;span class&#x3D;&quot;curly-brace&quot;&gt;{{markers.object.open}}&lt;/span&gt;
+    &lt;br&gt;
+    &lt;span *ngFor&#x3D;&quot;let k of obj.keys; let i &#x3D; index&quot;&gt;
+        &lt;span *ngFor&#x3D;&quot;let i of arrayN(tabSpace * (tabSpaceIndex + 1))&quot;&gt;&amp;nbsp;&lt;/span&gt;
+        &lt;span class&#x3D;&quot;object-key&quot;&gt;&quot;{{k}}&quot;&lt;/span&gt;
+        &lt;span class&#x3D;&quot;object-colon&quot;&gt;{{markers.object.keyValueSeparator}} &lt;/span&gt;
+        &lt;lib-data-viewer [tab-space-index]&#x3D;&quot;tabSpaceIndex + 1&quot; [tab-space]&#x3D;&quot;tabSpace&quot; [obj]&#x3D;&quot;obj.data[k]&quot; [config]&#x3D;&quot;config&quot;&gt;&lt;/lib-data-viewer&gt;
+        &lt;span *ngIf&#x3D;&quot;i &lt; obj.keys.length-1&quot;&gt;&lt;span class&#x3D;&quot;object-element-separator&quot;&gt;,&lt;/span&gt;&lt;br&gt;&lt;/span&gt;
+    &lt;/span&gt;
+    &lt;br&gt;
+    &lt;span *ngFor&#x3D;&quot;let i of arrayN(tabSpace * tabSpaceIndex)&quot;&gt;&amp;nbsp;&lt;/span&gt;
+    &lt;span class&#x3D;&quot;curly-brace&quot;&gt;{{markers.object.close}}&lt;/span&gt;
+&lt;/span&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./data-viewer.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!-- Native Values --><span *ngIf="obj.type==Type.Native" class="native-value">    {{obj.data}}</span><!-- Array of Native Values --><span *ngIf="obj.type==Type.NativeArray">    <span class="array-bracket">[</span>    <span *ngFor="let v of obj.data; let i = index">        {{v.data}}        <span *ngIf="i < obj.data.length-1"><span class="array-element-separator">{{markers.array.separator}}</span> </span>    </span>    <span class="array-bracket">]</span></span><!-- Array of Native Values/Objects/Arrays --><span *ngIf="obj.type==Type.Array">    <span class="array-bracket">{{markers.array.open}}</span>    <br>    <span *ngFor="let v of obj.data; let i = index">        <span *ngFor="let i of arrayN(tabSpace * (tabSpaceIndex + 1))">&nbsp;</span>        <lib-data-viewer [tab-space-index]="tabSpaceIndex + 1" [tab-space]="tabSpace" [obj]="v" [config]="config"></lib-data-viewer>        <span *ngIf="i < obj.data.length-1"><span class="array-element-separator">{{markers.array.separator}}</span><br></span>    </span>    <br>    <span class="array-bracket">{{markers.array.open}}</span></span><!-- Object --><span *ngIf="obj.type==Type.Object">    <span class="curly-brace">{{markers.object.open}}</span>    <br>    <span *ngFor="let k of obj.keys; let i = index">        <span *ngFor="let i of arrayN(tabSpace * (tabSpaceIndex + 1))">&nbsp;</span>        <span class="object-key">"{{k}}"</span>        <span class="object-colon">{{markers.object.keyValueSeparator}} </span>        <lib-data-viewer [tab-space-index]="tabSpaceIndex + 1" [tab-space]="tabSpace" [obj]="obj.data[k]" [config]="config"></lib-data-viewer>        <span *ngIf="i < obj.keys.length-1"><span class="object-element-separator">,</span><br></span>    </span>    <br>    <span *ngFor="let i of arrayN(tabSpace * tabSpaceIndex)">&nbsp;</span>    <span class="curly-brace">{{markers.object.close}}</span></span></div>'
+    var COMPONENTS = [{'name': 'DataViewerComponent', 'selector': 'lib-data-viewer'},{'name': 'DlJsonViewerComponent', 'selector': 'lib-dl-json-viewer'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'DataViewerComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DataViewerComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

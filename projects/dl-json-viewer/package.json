@@ -1,0 +1,26 @@
+{
+  "name": "dl-json-viewer",
+  "version": "1.0.0",
+  "description": "Module for JSON display in an Angular application.",
+  "author": {
+    "name": "Dame Lyngdoh",
+    "email": "damelyngdoh@outlook.com"
+  },
+  "homepage": "https://github.com/DameLyngdoh/dl-json-viewer-angular",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DameLyngdoh/dl-json-viewer-angular"
+  },
+  "bugs": {
+    "email": "damelyngdoh@outlook.com",
+    "url": "https://github.com/DameLyngdoh/dl-json-viewer-angular/issues"
+  },
+  "keywords": ["json","viewer","beautify","angular","library","component"],
+  "peerDependencies": {
+    "@angular/common": "^7.2.0",
+    "@angular/core": "^7.2.0"
+  },
+  "dependencies": {
+    "dl-json-utilities": "^1.0.0"
+  }
+}

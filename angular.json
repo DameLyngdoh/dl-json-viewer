@@ -27,9 +27,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
@@ -128,6 +132,41 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "dl-json-viewer": {
+      "root": "projects/dl-json-viewer",
+      "sourceRoot": "projects/dl-json-viewer/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/dl-json-viewer/tsconfig.lib.json",
+            "project": "projects/dl-json-viewer/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/dl-json-viewer/src/test.ts",
+            "tsConfig": "projects/dl-json-viewer/tsconfig.spec.json",
+            "karmaConfig": "projects/dl-json-viewer/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/dl-json-viewer/tsconfig.lib.json",
+              "projects/dl-json-viewer/tsconfig.spec.json"
+            ],
             "exclude": [
               "**/node_modules/**"
             ]

@@ -1,0 +1,43 @@
+<!-- Native Values -->
+<span *ngIf="obj.type==Type.Native" class="native-value">
+    {{obj.data}}
+</span>
+
+<!-- Array of Native Values -->
+<span *ngIf="obj.type==Type.NativeArray">
+    <span class="array-bracket">[</span>
+    <span *ngFor="let v of obj.data; let i = index">
+        {{v.data}}
+        <span *ngIf="i < obj.data.length-1"><span class="array-element-separator">{{markers.array.separator}}</span> </span>
+    </span>
+    <span class="array-bracket">]</span>
+</span>
+
+<!-- Array of Native Values/Objects/Arrays -->
+<span *ngIf="obj.type==Type.Array">
+    <span class="array-bracket">{{markers.array.open}}</span>
+    <br>
+    <span *ngFor="let v of obj.data; let i = index">
+        <span *ngFor="let i of arrayN(tabSpace * (tabSpaceIndex + 1))">&nbsp;</span>
+        <lib-data-viewer [tab-space-index]="tabSpaceIndex + 1" [tab-space]="tabSpace" [obj]="v" [config]="config"></lib-data-viewer>
+        <span *ngIf="i < obj.data.length-1"><span class="array-element-separator">{{markers.array.separator}}</span><br></span>
+    </span>
+    <br>
+    <span class="array-bracket">{{markers.array.open}}</span>
+</span>
+
+<!-- Object -->
+<span *ngIf="obj.type==Type.Object">
+    <span class="curly-brace">{{markers.object.open}}</span>
+    <br>
+    <span *ngFor="let k of obj.keys; let i = index">
+        <span *ngFor="let i of arrayN(tabSpace * (tabSpaceIndex + 1))">&nbsp;</span>
+        <span class="object-key">"{{k}}"</span>
+        <span class="object-colon">{{markers.object.keyValueSeparator}} </span>
+        <lib-data-viewer [tab-space-index]="tabSpaceIndex + 1" [tab-space]="tabSpace" [obj]="obj.data[k]" [config]="config"></lib-data-viewer>
+        <span *ngIf="i < obj.keys.length-1"><span class="object-element-separator">,</span><br></span>
+    </span>
+    <br>
+    <span *ngFor="let i of arrayN(tabSpace * tabSpaceIndex)">&nbsp;</span>
+    <span class="curly-brace">{{markers.object.close}}</span>
+</span>

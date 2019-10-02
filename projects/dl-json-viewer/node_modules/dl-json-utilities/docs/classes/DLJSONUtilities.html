@@ -1,0 +1,1255 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Typescript JSON Object Utilities</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Typescript JSON Object Utilities</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li>DLJSONUtilities</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>dLJSONUtilities.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Class containing static methods for JSON comparison and manipulation.</p>
+
+            </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#arrayEquals">arrayEquals</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#compareObjects">compareObjects</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#isJSONObject">isJSONObject</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#isPropertyObject">isPropertyObject</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#jsonHasAllProperties">jsonHasAllProperties</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#jsonHasSimilarProperties">jsonHasSimilarProperties</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#jsonPutAll">jsonPutAll</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#jsonSimilarPropertiesDataType">jsonSimilarPropertiesDataType</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="arrayEquals"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Static</span>
+                            arrayEquals
+                        </b>
+                        <a href="#arrayEquals"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>arrayEquals(arr1: <a href="../anys/a.html">any[]</a>, arr2: <a href="../anys/a.html">any[]</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="195"
+                            class="link-to-prism">dLJSONUtilities.ts:195</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Checks if two arrays are equal or not; having identical elements in the same order. If the 
+element is an array then it will also undergo similar check and if the element is a JSON 
+object then a deep compare will be performed.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>arr1</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/variables.html#a" target="_self" >any[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The first array object.</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>arr2</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/variables.html#a" target="_self" >any[]</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The second array object.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Returns true if the two arrays are identical or false otherwise.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="compareObjects"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Static</span>
+                            compareObjects
+                        </b>
+                        <a href="#compareObjects"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>compareObjects(A: <a href="../anys/a.html">any</a>, B: <a href="../anys/a.html">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="14"
+                            class="link-to-prism">dLJSONUtilities.ts:14</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Compares two objects to see if their are equal or not. The objects may be native 
+(number, string, etc.) or objects (arrays or JSON objects). In case, of arrays, the 
+arrayEquals method will be called and in case of JSON objects, the jsonHasSimilarProperties 
+with compareValue flag set to true will be used.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>A</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/variables.html#a" target="_self" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The first object.</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>B</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/variables.html#a" target="_self" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The second object.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Returns true if the two objects are equal or false otherwise.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isJSONObject"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Static</span>
+                            isJSONObject
+                        </b>
+                        <a href="#isJSONObject"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isJSONObject(obj: <a href="../anys/a.html">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="212"
+                            class="link-to-prism">dLJSONUtilities.ts:212</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Verifies if an object is a valid JSON object or not.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>obj</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/variables.html#a" target="_self" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The object to be verified.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Returns true when the object is a valid JSON object or false otherwise.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isPropertyObject"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Static</span>
+                            isPropertyObject
+                        </b>
+                        <a href="#isPropertyObject"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isPropertyObject(obj: <a href="../anys/a.html">any</a>, property: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="222"
+                            class="link-to-prism">dLJSONUtilities.ts:222</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Checks if a property of an object is a valid JSON object.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>obj</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/variables.html#a" target="_self" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The object containing the property.</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>property</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The property of the object to be verified.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Returns true if the property is a valid JSON object or false otherwise.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="jsonHasAllProperties"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Static</span>
+                            jsonHasAllProperties
+                        </b>
+                        <a href="#jsonHasAllProperties"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>jsonHasAllProperties(obj: <a href="../anys/a.html">any</a>, source: <a href="../anys/a.html">any</a>, compareValues: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">dLJSONUtilities.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Checks if an object contains all the properties (including nested properties) of a 
+reference source object. The object may have additional properties which may not be 
+present in the source object, but they will not have any influence on the output.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>obj</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/variables.html#a" target="_self" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The object to be checked.</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>source</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/variables.html#a" target="_self" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The source object to check against.</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>compareValues</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>If true, then the values of the properties will also be checked for equality.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Returns true if all the properties of the source object are present in the object or false otherwise.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="jsonHasSimilarProperties"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Static</span>
+                            jsonHasSimilarProperties
+                        </b>
+                        <a href="#jsonHasSimilarProperties"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>jsonHasSimilarProperties(obj: <a href="../anys/a.html">any</a>, source: <a href="../anys/a.html">any</a>, compareValues: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="143"
+                            class="link-to-prism">dLJSONUtilities.ts:143</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Checks if all the properties of an object are present in the reference source object 
+and there are no additional properties within the object which are not present in the 
+source reference. This is similar to a deep compare of two objects when the compareValue 
+flag is set to true.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>obj</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/variables.html#a" target="_self" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The object to be verified.</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>source</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/variables.html#a" target="_self" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The reference object.</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>compareValues</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>If true, then the values of the properties will also be compared.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Returns true if the two objects are identical or false otherwise.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="jsonPutAll"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Static</span>
+                            jsonPutAll
+                        </b>
+                        <a href="#jsonPutAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>jsonPutAll(obj: <a href="../anys/a.html">any</a>, source: <a href="../anys/a.html">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="237"
+                            class="link-to-prism">dLJSONUtilities.ts:237</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Appends all properties in source which are not present in the object to the object.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>obj</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/variables.html#a" target="_self" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The object to have properties appended to.</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>source</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/variables.html#a" target="_self" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The source object to look for the additional properties.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="jsonSimilarPropertiesDataType"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Static</span>
+                            jsonSimilarPropertiesDataType
+                        </b>
+                        <a href="#jsonSimilarPropertiesDataType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>jsonSimilarPropertiesDataType(obj: <a href="../anys/a.html">any</a>, source: <a href="../anys/a.html">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="98"
+                            class="link-to-prism">dLJSONUtilities.ts:98</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Checks if a JSON object has properties with identical data-type as that of a source 
+object used for reference.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>obj</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/variables.html#a" target="_self" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The object to be verified.</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>source</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/variables.html#a" target="_self" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>The source object to use as reference.</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Returns true if all the properties of object are present in source object and have the same data-type.</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">export class DLJSONUtilities {
+    /**
+     * Compares two objects to see if their are equal or not. The objects may be native 
+     * (number, string, etc.) or objects (arrays or JSON objects). In case, of arrays, the 
+     * arrayEquals method will be called and in case of JSON objects, the jsonHasSimilarProperties 
+     * with compareValue flag set to true will be used.
+     * @param {object} A The first object.
+     * @param {object} B The second object.
+     * @returns {boolean} Returns true if the two objects are equal or false otherwise.
+     */
+    static compareObjects(A: any, B: any): boolean {
+        if (A&#x3D;&#x3D;null) {
+            if (B!&#x3D;null) {
+                return false;
+            }
+            return true;
+        }
+        if (A&#x3D;&#x3D;undefined) {
+            if (B!&#x3D;undefined) {
+                return false;
+            }
+            return true;
+        }
+
+        if (Array.isArray(A)) {
+            if (Array.isArray(B)) {
+                if (!DLJSONUtilities.arrayEquals(A, B)) {
+                    return false;
+                }
+            }
+            else {
+                return false;
+            }
+        }
+        else if (DLJSONUtilities.isJSONObject(A)) {
+            if (DLJSONUtilities.isJSONObject(B)) {
+                if (!DLJSONUtilities.jsonHasSimilarProperties(A, B, true)) {
+                    return false;
+                }
+            }
+            else {
+                return false;
+            }
+        }
+        else {
+            if (A !&#x3D;&#x3D; B) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * Checks if an object contains all the properties (including nested properties) of a 
+     * reference source object. The object may have additional properties which may not be 
+     * present in the source object, but they will not have any influence on the output.
+     * @param {object} obj The object to be checked.
+     * @param {object} source The source object to check against.
+     * @param {boolean} compareValues If true, then the values of the properties will also be checked for equality.
+     * @returns {boolean} Returns true if all the properties of the source object are present in the object or false otherwise.
+     */
+    static jsonHasAllProperties(obj: any, source: any, compareValues: boolean): boolean {
+        if (!DLJSONUtilities.isJSONObject(obj)) {
+            throw new Error(&#x27;obj parameter must be a valid JSON object.&#x27;);
+        }
+        if (!DLJSONUtilities.isJSONObject(source)) {
+            throw new Error(&#x27;source parameter must be a valid JSON object.&#x27;);
+        }
+
+        let sourceKeys: string[] &#x3D; Object.keys(source);
+
+        for ( let i &#x3D; 0; i &lt; sourceKeys.length; i++) {
+            if (!obj.hasOwnProperty(sourceKeys[i])) {
+                return false;
+            }
+            if (DLJSONUtilities.isPropertyObject(obj, sourceKeys[i])) {
+                if (!DLJSONUtilities.jsonHasAllProperties(obj[sourceKeys[i]], source[sourceKeys[i]], compareValues)) {
+                    return false;
+                }
+            }
+            else if (compareValues &amp;&amp; !DLJSONUtilities.compareObjects(obj[sourceKeys[i]], source[sourceKeys[i]]) ){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * Checks if a JSON object has properties with identical data-type as that of a source 
+     * object used for reference.
+     * @param {object} obj The object to be verified.
+     * @param {object} source The source object to use as reference.
+     * @returns {boolean} Returns true if all the properties of object are present in source object and have the same data-type.
+     */
+    static jsonSimilarPropertiesDataType(obj: any, source: any): boolean {
+        if (!DLJSONUtilities.isJSONObject(obj)) {
+            throw new Error(&#x27;obj parameter must be a valid JSON object.&#x27;);
+        }
+        if (!DLJSONUtilities.isJSONObject(source)) {
+            throw new Error(&#x27;source parameter must be a valid JSON object.&#x27;);
+        }
+
+        let sourceKeys: string[] &#x3D; Object.keys(source);
+
+        for ( let i &#x3D; 0; i &lt; sourceKeys.length; i++) {
+            // Checking if object has the property
+            if (!obj.hasOwnProperty(sourceKeys[i])) {
+                return false;
+            }
+
+            // Checking if the property is of the same type
+            if (typeof obj[sourceKeys[i]] !&#x3D; typeof source[sourceKeys[i]]) {
+                return false;
+            }
+            else if (Array.isArray(obj[sourceKeys[i]])) {
+                if (!Array.isArray(source[sourceKeys[i]])) {
+                    return false;
+                }
+            }
+
+            if (DLJSONUtilities.isPropertyObject(obj, sourceKeys[i])) {
+                if (!DLJSONUtilities.jsonSimilarPropertiesDataType(obj[sourceKeys[i]], source[sourceKeys[i]])) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    /**
+     * Checks if all the properties of an object are present in the reference source object 
+     * and there are no additional properties within the object which are not present in the 
+     * source reference. This is similar to a deep compare of two objects when the compareValue 
+     * flag is set to true.
+     * @param {object} obj The object to be verified.
+     * @param {object} source The reference object.
+     * @param {boolean} compareValues If true, then the values of the properties will also be compared.
+     * @returns {boolean} Returns true if the two objects are identical or false otherwise.
+     */
+    static jsonHasSimilarProperties(obj: any, source: any, compareValues: boolean): boolean {
+        if (!DLJSONUtilities.isJSONObject(obj)) {
+            throw new Error(&#x27;obj parameter must be a valid JSON object.&#x27;);
+        }
+        if (!DLJSONUtilities.isJSONObject(source)) {
+            throw new Error(&#x27;source parameter must be a valid JSON object.&#x27;);
+        }
+        
+        let sourceKeys: string[] &#x3D; Object.keys(source);
+        let objKeys: string[] &#x3D; Object.keys(obj);
+
+        // If lengths are unequal
+        if (sourceKeys.length !&#x3D; objKeys.length) {
+            return false;
+        }
+
+        // Comparing values and properties existence
+        for (let i &#x3D; 0; i &lt; sourceKeys.length; i++) {
+            if (!obj.hasOwnProperty(sourceKeys[i])) {
+                return false;
+            }
+            if (!DLJSONUtilities.isPropertyObject(obj, sourceKeys[i]) &amp;&amp; !DLJSONUtilities.isPropertyObject(source, sourceKeys[i]) &amp;&amp; compareValues) {
+                if (!DLJSONUtilities.compareObjects(obj[sourceKeys[i]], source[sourceKeys[i]])) {
+                    return false;
+                }
+            }
+        }
+
+        // Comparing nested objects
+        for (let i &#x3D; 0; i &lt; sourceKeys.length; i++) {
+            if (DLJSONUtilities.isPropertyObject(obj, sourceKeys[i])) {
+                if (DLJSONUtilities.isPropertyObject(source, sourceKeys[i])) {
+                    if (!DLJSONUtilities.jsonHasSimilarProperties(obj[sourceKeys[i]], source[sourceKeys[i]], compareValues)) {
+                        return false;
+                    }
+                }
+                else {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    /**
+     * Checks if two arrays are equal or not; having identical elements in the same order. If the 
+     * element is an array then it will also undergo similar check and if the element is a JSON 
+     * object then a deep compare will be performed.
+     * @param {object} arr1 The first array object.
+     * @param {object} arr2 The second array object.
+     * @returns {boolean} Returns true if the two arrays are identical or false otherwise.
+     */
+    static arrayEquals(arr1: any[], arr2: any[]): boolean {
+        if (arr1.length !&#x3D; arr2.length) {
+            return false;
+        }
+        for (let i &#x3D; 0; i &lt; arr1.length; i++) {
+            if (!DLJSONUtilities.compareObjects(arr1[i], arr2[i])) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /**
+     * Verifies if an object is a valid JSON object or not.
+     * @param {object} obj The object to be verified.
+     * @returns {boolean} Returns true when the object is a valid JSON object or false otherwise.
+     */
+    static isJSONObject(obj: any): boolean {
+        return !(obj &#x3D;&#x3D; null || obj &#x3D;&#x3D; undefined || typeof obj !&#x3D; &#x27;object&#x27; || (typeof obj &#x3D;&#x3D; &#x27;object&#x27; &amp;&amp; Array.isArray(obj)));
+    }
+
+    /**
+     * Checks if a property of an object is a valid JSON object.
+     * @param {object} obj The object containing the property.
+     * @param {string} property The property of the object to be verified.
+     * @returns {boolean} Returns true if the property is a valid JSON object or false otherwise.
+     */
+    static isPropertyObject(obj: any, property: string): boolean {
+        if (!DLJSONUtilities.isJSONObject(obj)) {
+            throw new Error(&#x27;Object is not a valid JSON object.&#x27;);
+        }
+        if (!obj.hasOwnProperty(property)) {
+            return false;
+        }
+        return DLJSONUtilities.isJSONObject(obj[property]);
+    }
+
+    /**
+     * Appends all properties in source which are not present in the object to the object.
+     * @param {object} obj The object to have properties appended to.
+     * @param {object} source The source object to look for the additional properties.
+     */
+   static jsonPutAll(obj: any, source: any): void {
+        if (!DLJSONUtilities.isJSONObject(obj)) {
+            throw new Error(&#x27;obj parameter must be a valid JSON object.&#x27;);
+        }
+        if (!DLJSONUtilities.isJSONObject(source)) {
+            throw new Error(&#x27;source parameter must be a valid JSON object.&#x27;);
+        }
+
+        let sourceKeys: string[] &#x3D; Object.keys(source);
+
+        for (let i &#x3D; 0; i &lt; sourceKeys.length; i++) {
+            if (!obj.hasOwnProperty(sourceKeys[i])) {
+                obj[sourceKeys[i]] &#x3D; source[sourceKeys[i]];
+            }
+            else if (DLJSONUtilities.isJSONObject(obj[sourceKeys[i]])) {
+                DLJSONUtilities.jsonPutAll(obj[sourceKeys[i]], source[sourceKeys[i]]);
+            }
+        }
+    }
+}</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'DLJSONUtilities.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
