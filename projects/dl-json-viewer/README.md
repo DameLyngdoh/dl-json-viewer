@@ -1,6 +1,9 @@
 # JSON Viewer for Angular
 A module which renders or displays a JSON object in proper indentation (or beautified form) in an Angular application.
 
+## Build
+Run `ng build dl-json-viewer` to build the project. The build artifacts will be stored in the `projects/dl-json-viewer/dist/` directory.
+
 ## Installation
 ### NPM
 
@@ -13,7 +16,7 @@ npm i dl-json-viewer-angular
 Add `DLJSONViewerModule` to your application's or module's imports. For example to import the module to your application, `app.module.ts` should have the following:
 
 ```typescript
-import { DLJsonViewerModule } from 'dl-json-viewer/public-api';
+import { DLJsonViewerModule } from 'dl-json-viewer';
 @NgModule({
   declarations: [
     AppComponent
@@ -91,6 +94,3 @@ ng serve
 
 ## Documentation
 The documentation for this project is generated using [Compodoc](https://compodoc.app/) tool. You can find the documentation at `doc/index.html`.
-
-## Build
-Run `ng build dl-json-viewer` to build the project. The build artifacts will be stored in the `dist/` directory.

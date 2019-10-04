@@ -47,8 +47,8 @@ export class JVObject {
 
     /**
      * Factory method that returns a new JVObject object according to the input object passed.
-     * @param {object} obj The input object for this factory method to wrap.
-     * @returns {object} Returns a new JVObject of this value.
+     * @param obj The input object for this factory method to wrap.
+     * @returns Returns a new JVObject of this value.
      */
     static objectFactory(obj: any|null|undefined): JVObject {
         if (JVObject.isNative(obj)) {
@@ -85,8 +85,8 @@ export class JVObject {
 
     /**
      * Checks if an object is a native type or not.
-     * @param {object} value The object to be checked.
-     * @returns {boolean} Returns true if the object is of type native or false otherwise.
+     * @param value The object to be checked.
+     * @returns Returns true if the object is of type native or false otherwise.
      */
     static isNative(value: any): boolean {
         return value === undefined || value === null || typeof value === 'number' || typeof value === 'boolean' || typeof value === 'string';
